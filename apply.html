@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Job Application Page</title>
+    <script>
+        function applyForJob() {
+            const message = document.getElementById('successMessage');
+            message.style.display = 'block'; 
+            message.innerText = "Job applied successfully!"; 
+        }
+    </script>
+</head>
+<body>
+    <div class="container" style="text-align: center; padding: 20px;">
+        <h1>Job Application Page</h1>
+
+        <div class="job" style="margin-bottom: 30px;">
+            <h2>Software Engineer</h2>
+            <p><strong>Company:</strong> Tech Innovations Inc.</p>
+            <p><strong>Job Description:</strong> We are looking for a skilled Software Engineer to join our development team. You will be responsible for designing, developing, and maintaining software applications.</p>
+            <p><strong>Salary:</strong> $85,000</p>
+            <button onclick="applyForJob()">Apply</button>
+        </div>
+
+        <div class="job" style="margin-bottom: 30px;">
+            <h2>Data Analyst</h2>
+            <p><strong>Company:</strong> Data Solutions Ltd.</p>
+            <p><strong>Job Description:</strong> As a Data Analyst, you will analyze complex datasets to help drive business strategies. Proficiency in SQL and data visualization tools is required.</p>
+            <p><strong>Salary:</strong> $75,000</p>
+            <button onclick="applyForJob()">Apply</button>
+        </div>
+
+        <div class="job" style="margin-bottom: 30px;">
+            <h2>Project Manager</h2>
+            <p><strong>Company:</strong> Global Projects Co.</p>
+            <p><strong>Job Description:</strong> We are seeking an experienced Project Manager to oversee project lifecycles. You will coordinate with cross-functional teams to ensure timely delivery.</p>
+            <p><strong>Salary:</strong> $90,000</p>
+            <button onclick="applyForJob()">Apply</button>
+        </div>
+
+        <div id="successMessage" style="color: green; font-weight: bold; font-size: 24px; margin-top: 20px; display: none;"></div>
+    </div>
+</body>
+</html>

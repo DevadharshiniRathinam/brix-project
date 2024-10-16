@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Portal</h1>
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="role">Role:</label>
+            <select id="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="applicant">Applicant</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script src="app.js"></script>
+
